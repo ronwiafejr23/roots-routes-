@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roots &amp; Routes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>Roots &amp; Routes</h1><p>Discover the world. Connect with culture.</p></header>
+    <main>
+        <section class="search-section">
+            <h2>Explore a Country</h2>
+            <form id="country-form">
+                <label for="country">Select a country:</label>
+                <select id="country">
+                    <option value="GH">Ghana</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="SN">Senegal</option>
+                    <option value="KE">Kenya</option>
+                    <option value="BR">Brazil</option>
+                    <option value="BB">Barbados</option>
+                </select>
+                <button type="submit">Explore Country</button>
+            </form>
+        </section>
+        <section class="country-card" aria-live="polite">
+            <h2 id="country-name">Discover a country</h2>
+            <p>Capital: <span id="capital"></span></p>
+            <p>Region: <span id="region"></span></p>
+            <p>Subregion: <span id="subregion"></span></p>
+            <p>Population: <span id="population"></span></p>
+            <p>Flag: <span id="flag"></span></p>
+        </section>
+    </main>
+    <footer><p>Powered by the countries.dev API</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
