@@ -1,14 +1,14 @@
 # Roots & Routes — Lab 5
 
-A travel and cultural exploration website. Choose a country from the dropdown and the page uses `fetch()` to get data from the [countries.dev](https://countries.dev/docs) API and show it on the page without reloading.
+A travel and cultural exploration website. Choose a country from the dropdown and the page uses fetch() to get data from the [countries.dev](https://countries.dev/docs) API and show it on the page without reloading.
 
 **Endpoint used:** `https://countries.dev/alpha/{code}` (for example `https://countries.dev/alpha/GH`). No API key is needed.
 
 ## Part 1: API exploration
 1. **Response structure:** The response is a **single object**, not an array. It is a flat object whose properties (name, capital, region, and so on) are read directly, which is why the code can use data.name with no index.
-2. **Country name expression:** `data.name`
-3. **Capital expression:** `data.capital` (the capital is a plain string, not an array, so no `[0]` is needed)
-4. **Additional property:** `flag`, the country's flag emoji, which the website did not display at the start. (The response also includes properties such as `currencies` and `languages`.)
+2. **Country name expression:** data.name
+3. **Capital expression:** data.capital (the capital is a plain string, not an array, so no [0] is needed)
+4. **Additional property:** flag, the country's flag emoji, which the website did not display at the start. (The response also includes properties such as currencies and languages.)
 
 ## Part 2: HTML
 - **TODO H1:** added <p>Subregion: <span id="subregion"></span></p>
